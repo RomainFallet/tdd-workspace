@@ -1,0 +1,5 @@
+node_modules
+apps/**/dist
+libs/**/**/dist
+tsconfig.tsbuildinfo
+.DS_Store

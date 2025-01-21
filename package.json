@@ -1,0 +1,46 @@
+{
+  "name": "@romainfallet/tdd-workspace",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": "^22.0.0",
+    "npm": ">=9.0.0 <11.0.0"
+  },
+  "type": "module",
+  "browserslist": [
+    "> 0.5%",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "workspaces": [
+    "./libs/domain/http-routing",
+    "./libs/domain/http-routing-test",
+    "./libs/infrastructure/http-routing",
+    "./libs/infrastructure/http-routing-test"
+  ],
+  "scripts": {
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,ts,json,html,css}": [
+      "prettier --check"
+    ],
+    "*.{js,ts,json}": [
+      "eslint"
+    ]
+  },
+  "devDependencies": {
+    "@developpeurdurable/cli-workspace-tools": "^2.0.0",
+    "@developpeurdurable/eslint-config": "^1.0.0",
+    "@qiwi/multi-semantic-release": "^7.0.0",
+    "@types/node": "^20.0.0",
+    "devmoji": "^2.0.0",
+    "eslint": "^8.0.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.0.0",
+    "npm-run-all": "^4.0.0",
+    "prettier": "^3.0.0",
+    "prettier-config-standard": "^7.0.0",
+    "typescript": "~5.5.0"
+  }
+}

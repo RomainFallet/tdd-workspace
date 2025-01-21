@@ -1,0 +1,16 @@
+{
+  "name": "@romainfallet/http-routing-test",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "lint": "workspace-tools --command lint",
+    "test": "workspace-tools --command test",
+    "clean": "workspace-tools --command clean"
+  },
+  "dependencies": {
+    "@romainfallet/http-routing": "*",
+    "@romainfallet/http-routing-infrastructure": "*",
+    "@developpeurdurable/test": "*"
+  },
+  "devDependencies": {}
+}

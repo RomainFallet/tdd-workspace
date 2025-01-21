@@ -1,0 +1,16 @@
+{
+  "name": "@romainfallet/http-routing",
+  "type": "module",
+  "private": true,
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "workspace-tools --command build",
+    "lint": "workspace-tools --command lint",
+    "clean": "workspace-tools --command clean"
+  },
+  "dependencies": {
+    "@developpeurdurable/date": "*"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,17 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "include": ["./src/**/*.ts"],
+  "references": [
+    {
+      "path": "../http-routing/tsconfig.json"
+    },
+    {
+      "path": "../../infrastructure/http-routing/tsconfig.json"
+    }
+  ]
+}
