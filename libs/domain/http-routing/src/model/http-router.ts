@@ -8,6 +8,6 @@ export class HttpRouter implements HttpRouterInterface {
   constructor(private readonly url: string) {}
 
   public matches(httpRequest: HttpRequest): boolean {
-    return true
+    return httpRequest.url === this.url;
   }
 }

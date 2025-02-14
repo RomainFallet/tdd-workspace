@@ -7,9 +7,8 @@ type HttpRequest = Readonly<{
   body: Readonly<unknown>
 }>
 
-
-
 export type {
   HttpRequest,
   HttpRequestMethod
 }
+
