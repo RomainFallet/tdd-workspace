@@ -5,7 +5,9 @@ type HttpRouterInterface = {
 }
 
 export class HttpRouter implements HttpRouterInterface {
-  public matches(httpRequest: HttpRequest, url: HttpRequest['url']): boolean {
-    return true;
+  constructor(private readonly url: string) {}
+
+  public matches(httpRequest: HttpRequest): boolean {
+    return true
   }
 }

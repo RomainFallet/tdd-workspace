@@ -13,7 +13,9 @@
     "moduleResolution": "node",
     "lib": ["ESNext"],
     "baseUrl": "./",
-    "paths": {}
+    "paths": {
+      "@romainfallet/http-routing": ["./libs/domain/http-routing/src/index.ts"]
+    }
   },
   "exclude": ["*.json"],
   "files": ["./typings.d.ts"]
